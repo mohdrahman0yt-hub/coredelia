@@ -1,0 +1,169 @@
+.awards-recognition {
+  background: #0a1628;
+  padding: 3rem 0 2rem;
+  position: relative;
+}
+
+.awards-section {
+  margin-bottom: 2rem;
+}
+
+.awards-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  max-width: 180px;
+}
+
+.award-logo {
+  width: auto;
+  height: 100px;
+  max-width: 160px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.award-item:hover .award-logo {
+  transform: scale(1.05);
+}
+
+.awards-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+}
+
+.social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .awards-grid {
+    gap: 1.5rem;
+  }
+
+  .award-item {
+    min-width: 100px;
+    max-width: 140px;
+  }
+
+  .award-logo {
+    height: 80px;
+    max-width: 120px;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+  }
+
+  .social-icon-link {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .awards-recognition {
+    padding: 2rem 0;
+  }
+
+  .awards-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .awards-grid {
+    gap: 1rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .awards-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .award-item {
+    min-width: 90px;
+    max-width: 110px;
+    flex-shrink: 0;
+  }
+
+  .award-logo {
+    height: 70px;
+    max-width: 100px;
+  }
+
+  .awards-divider {
+    margin: 0 auto 1.5rem;
+  }
+
+  .social-links {
+    gap: 1.25rem;
+  }
+
+  .social-icon-link {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-grid {
+    gap: 0.75rem;
+  }
+
+  .award-item {
+    min-width: 80px;
+    max-width: 95px;
+  }
+
+  .award-logo {
+    height: 60px;
+    max-width: 85px;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-icon-link {
+    width: 36px;
+    height: 36px;
+  }
+}
