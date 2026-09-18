@@ -1,6 +1,7 @@
 .cruise-itineraries {
   background: var(--white);
   padding: 5rem 0;
+  scroll-margin-top: 80px;
 }
 
 .section-header {

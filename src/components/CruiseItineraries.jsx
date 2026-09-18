@@ -21,7 +21,7 @@ const CruiseItineraries = () => {
         id: 'weekend-1',
         title: '2-Night Mumbai Weekend',
         badge: 'WEEKEND ESCAPE',
-        image: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=800&q=80',
+        image: '/image copy 6.png',
         date: '19 Sep 2026 → 21 Sep 2026',
         ship: 'EMPRESS',
         route: 'Mumbai → Goa',
@@ -31,7 +31,7 @@ const CruiseItineraries = () => {
         id: 'weekend-2',
         title: '2-Night Goa Weekend',
         badge: 'COASTAL GETAWAY',
-        image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+        image: '/image copy 7.png',
         date: '26 Sep 2026 → 28 Sep 2026',
         ship: 'EMPRESS',
         route: 'Goa → Mumbai',
@@ -41,7 +41,7 @@ const CruiseItineraries = () => {
         id: 'weekend-3',
         title: '3-Night Weekend Escape',
         badge: 'EXTENDED WEEKEND',
-        image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+        image: '/image copy 8.png',
         date: '03 Oct 2026 → 06 Oct 2026',
         ship: 'EMPRESS',
         route: 'Mumbai → Goa → Mumbai',
@@ -53,7 +53,7 @@ const CruiseItineraries = () => {
         id: 'kochi-1',
         title: '3-Night Kochi Adventure',
         badge: 'SOUTH INDIA',
-        image: 'https://images.unsplash.com/photo-1609766856921-7e5e4ae6b3f3?auto=format&fit=crop&w=800&q=80',
+        image: '/image copy 8.png',
         date: '10 Oct 2026 → 13 Oct 2026',
         ship: 'EMPRESS',
         route: 'Kochi → Lakshadweep → Kochi',
@@ -97,7 +97,7 @@ const CruiseItineraries = () => {
         id: 'lakshadweep-1',
         title: '3-Night Lakshadweep',
         badge: 'ISLAND PARADISE',
-        image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+        image: '/image copy 9.png',
         date: '07 Nov 2026 → 10 Nov 2026',
         ship: 'EMPRESS',
         route: 'Mumbai → Lakshadweep → Mumbai',
@@ -147,7 +147,7 @@ const CruiseItineraries = () => {
   }
 
   return (
-    <section className="cruise-itineraries section">
+    <section id="itineraries" className="cruise-itineraries section">
       <div className="container">
         <motion.div 
           className="section-header"

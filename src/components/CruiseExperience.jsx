@@ -4,10 +4,9 @@ import { Check } from 'lucide-react'
 import './CruiseExperience.css'
 
 const CruiseExperience = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+  const openOfferModal = () => {
+    if (window.openOfferModal) {
+      window.openOfferModal()
     }
   }
 
@@ -31,7 +30,7 @@ const CruiseExperience = () => {
             transition={{ duration: 0.6 }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80" 
+              src="/image copy 6.png" 
               alt="Cruise ship experience"
               loading="lazy"
             />
@@ -56,8 +55,8 @@ const CruiseExperience = () => {
             </ul>
 
             <button 
-              className="btn btn-cta experience-cta"
-              onClick={() => scrollToSection('enquiry-form')}
+              className="btn btn-primary experience-cta"
+              onClick={openOfferModal}
             >
               Plan My Cruise
             </button>

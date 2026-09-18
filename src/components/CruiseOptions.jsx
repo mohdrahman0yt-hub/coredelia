@@ -17,7 +17,7 @@ const CruiseOptions = () => {
       route: 'Mumbai → Goa',
       description: 'Perfect for a quick refreshing break from routine.',
       badge: 'WEEKEND GETAWAY',
-      image: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=800&q=80',
+      image: 'public/image copy 7.png',
       cta: 'Explore Cruise'
     },
     {
@@ -41,7 +41,7 @@ const CruiseOptions = () => {
   ]
 
   return (
-    <section className="cruise-options section">
+    <section id="offers" className="cruise-options section">
       <div className="container">
         <motion.div 
           className="section-header"

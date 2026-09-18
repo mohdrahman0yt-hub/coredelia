@@ -1,5 +1,6 @@
 .cruise-experience {
   background: var(--off-white);
+  scroll-margin-top: 80px;
 }
 
 .experience-image {

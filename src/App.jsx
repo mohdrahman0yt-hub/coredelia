@@ -37,7 +37,6 @@ function App() {
       <Header />
       <Hero />
       <DirectBookingBenefits />
-      <CruiseExperience />
       <Destinations />
       <CruiseOptions />
       <CruiseItineraries />
