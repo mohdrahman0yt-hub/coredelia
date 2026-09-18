@@ -4,9 +4,10 @@ import { ArrowRight } from 'lucide-react'
 import './CruiseOptions.css'
 
 const CruiseOptions = () => {
-  const openOfferModal = () => {
-    if (window.openOfferModal) {
-      window.openOfferModal()
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -86,9 +87,9 @@ const CruiseOptions = () => {
                 
                 <div className="cruise-card-divider"></div>
                 
-                <button 
+                <button
                   className="cruise-card-cta"
-                  onClick={openOfferModal}
+                  onClick={() => scrollToSection('vacation-search')}
                 >
                   {option.cta}
                   <motion.span

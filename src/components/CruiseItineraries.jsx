@@ -140,9 +140,10 @@ const CruiseItineraries = () => {
     setCurrentIndex(prev => Math.min(maxIndex, prev + 1))
   }
 
-  const openOfferModal = () => {
-    if (window.openOfferModal) {
-      window.openOfferModal()
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -232,9 +233,9 @@ const CruiseItineraries = () => {
                     
                     <div className="itinerary-divider"></div>
                     
-                    <button 
+                    <button
                       className="itinerary-cta"
-                      onClick={openOfferModal}
+                      onClick={() => scrollToSection('vacation-search')}
                     >
                       {itinerary.cta}
                       <motion.span

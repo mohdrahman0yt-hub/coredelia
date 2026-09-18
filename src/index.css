@@ -96,8 +96,8 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-  color: var(--navy-dark);
+  background: linear-gradient(90deg, #D29BC1 0%, #D9A1BD 35%, #E6ACB7 65%, #EDB2B1 100%);
+  color: var(--white);
   box-shadow: var(--shadow-md);
 }
 
@@ -129,7 +129,7 @@ p {
 }
 
 .btn-cta {
-  background: linear-gradient(135deg, var(--ocean-blue) 0%, var(--ocean-light) 100%);
+  background: linear-gradient(90deg, #D29BC1 0%, #D9A1BD 35%, #E6ACB7 65%, #EDB2B1 100%);
   color: var(--white);
   box-shadow: var(--shadow-md);
 }
@@ -255,8 +255,8 @@ img {
 .form-input:focus,
 .form-select:focus {
   outline: none;
-  border-color: var(--ocean-blue);
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  border-color: #B23A93;
+  box-shadow: 0 0 0 3px rgba(178, 58, 147, 0.1);
 }
 
 .form-input::placeholder {

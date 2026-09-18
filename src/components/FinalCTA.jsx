@@ -41,12 +41,12 @@ const FinalCTA = () => {
             Tell us your travel plans and let our cruise experts help you discover the right journey.
           </p>
           <div className="final-cta-buttons">
-            <button 
+            <button
               id="final-cta-primary"
               className="btn btn-primary"
-              onClick={openOfferModal}
+              onClick={() => scrollToSection('vacation-search')}
             >
-              Get Cruise Offers
+              Book Now
             </button>
           </div>
         </motion.div>

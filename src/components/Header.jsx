@@ -97,14 +97,10 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <button 
+          <button
             id="header-cta"
             className="btn btn-primary"
-            onClick={() => {
-              if (window.openOfferModal) {
-                window.openOfferModal()
-              }
-            }}
+            onClick={() => scrollToSection('vacation-search')}
           >
             Get Cruise Offers
           </button>
@@ -193,12 +189,10 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="mobile-nav-item">
-                  <button 
+                  <button
                     className="btn btn-primary mobile-cta"
                     onClick={() => {
-                      if (window.openOfferModal) {
-                        window.openOfferModal()
-                      }
+                      scrollToSection('vacation-search')
                       setIsMobileMenuOpen(false)
                     }}
                   >

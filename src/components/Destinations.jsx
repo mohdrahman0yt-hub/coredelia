@@ -9,9 +9,10 @@ const Destinations = () => {
   const [startX, setStartX] = useState(0)
   const carouselRef = useRef(null)
 
-  const openOfferModal = () => {
-    if (window.openOfferModal) {
-      window.openOfferModal()
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -220,7 +221,7 @@ const Destinations = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  onClick={openOfferModal}
+                  onClick={() => scrollToSection('vacation-search')}
                 >
                   <div className="destination-card-image">
                     <img 

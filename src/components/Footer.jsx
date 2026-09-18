@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Cordelia Cruises. All rights reserved.
+            © 2026 Cordelia Cruises. All rights reserved.
           </p>
         </div>
       </div>

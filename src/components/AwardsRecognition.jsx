@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Linkedin, Instagram, Facebook, Youtube } from 'lucide-react'
 import './AwardsRecognition.css'
 
 const AwardsRecognition = () => {
@@ -30,38 +29,11 @@ const AwardsRecognition = () => {
       image: '/image copy 4.png',
       alt: 'Best Cruise and Expedition 2023'
     },
-    {
-      name: 'Maritime Excellence Achievers 2023',
-      image: '/image copy 5.png',
-      alt: 'Maritime Excellence Achievers 2023'
-    },
+    
     {
       name: 'BLM Excellence Awards 2023',
       image: '/blm-excellence-awards-2023.png',
       alt: 'BLM Excellence Awards 2023'
-    }
-  ]
-
-  const socialLinks = [
-    {
-      name: 'LinkedIn',
-      url: 'https://in.linkedin.com/company/cordeliacruises',
-      icon: Linkedin
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/cordeliacruises/?hl=en',
-      icon: Instagram
-    },
-    {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/cordeliacruises',
-      icon: Facebook
-    },
-    {
-      name: 'YouTube',
-      url: 'https://www.youtube.com/channel/UCIGZzyqWsbCH1-VNFsXrY9g',
-      icon: Youtube
     }
   ]
 
@@ -97,32 +69,10 @@ const AwardsRecognition = () => {
           </div>
         </motion.div>
 
-        {/* Divider */}
-        <div className="awards-divider"></div>
-
-        {/* Social Media Section */}
-        <motion.div 
-          className="social-section"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <div className="social-links">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon-link"
-                aria-label={social.name}
-              >
-                <social.icon size={24} />
-              </a>
-            ))}
-          </div>
-        </motion.div>
+        {/* Copyright */}
+        <div className="awards-copyright">
+          © 2026 Cordelia Cruises. All Rights Reserved.
+        </div>
       </div>
     </section>
   )

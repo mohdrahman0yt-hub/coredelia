@@ -1,5 +1,6 @@
 .direct-booking-benefits {
   background: var(--white);
+  padding-top: 8rem;
 }
 
 .section-header {
@@ -72,6 +73,10 @@
 }
 
 @media (max-width: 768px) {
+  .direct-booking-benefits {
+    padding-top: 10rem;
+  }
+
   .section-header {
     margin-bottom: 3rem;
   }

@@ -1,5 +1,5 @@
 .awards-recognition {
-  background: #0a1628;
+  background: #053B91;
   padding: 3rem 0 2rem;
   position: relative;
 }
@@ -36,11 +36,13 @@
   transform: scale(1.05);
 }
 
-.awards-divider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 auto 2rem;
-  max-width: 1200px;
+.awards-copyright {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .social-section {
@@ -97,7 +99,7 @@
 
 @media (max-width: 768px) {
   .awards-recognition {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .awards-section {
@@ -105,28 +107,28 @@
   }
 
   .awards-grid {
-    gap: 1rem;
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding-bottom: 1rem;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .awards-grid::-webkit-scrollbar {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    justify-content: center;
   }
 
   .award-item {
-    min-width: 90px;
-    max-width: 110px;
+    min-width: auto;
+    max-width: 100%;
     flex-shrink: 0;
   }
 
   .award-logo {
-    height: 70px;
-    max-width: 100px;
+    height: 90px;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .awards-copyright {
+    margin-top: 1.5rem;
+    padding-bottom: 1.25rem;
+    font-size: 0.8125rem;
   }
 
   .awards-divider {
@@ -145,17 +147,18 @@
 
 @media (max-width: 480px) {
   .awards-grid {
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
 
   .award-item {
-    min-width: 80px;
-    max-width: 95px;
+    min-width: auto;
+    max-width: 100%;
   }
 
   .award-logo {
-    height: 60px;
-    max-width: 85px;
+    height: 80px;
+    max-width: 100%;
+    width: auto;
   }
 
   .social-links {

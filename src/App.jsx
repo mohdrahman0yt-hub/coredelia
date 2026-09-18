@@ -36,13 +36,13 @@ function App() {
     <div className="app">
       <Header />
       <Hero />
-      <DirectBookingBenefits />
+      {/* <DirectBookingBenefits /> */}
       <Destinations />
       <CruiseOptions />
       <CruiseItineraries />
       <FinalCTA />
       <AwardsRecognition />
-      <Footer />
+      {/* <Footer /> */}
       {showStickyCTA && <MobileStickyCTA />}
       <OfferModal 
         isOpen={isOfferModalOpen} 

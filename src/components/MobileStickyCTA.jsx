@@ -3,9 +3,10 @@ import { motion } from 'framer-motion'
 import './MobileStickyCTA.css'
 
 const MobileStickyCTA = () => {
-  const openOfferModal = () => {
-    if (window.openOfferModal) {
-      window.openOfferModal()
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -17,10 +18,10 @@ const MobileStickyCTA = () => {
       exit={{ y: 100 }}
       transition={{ duration: 0.3 }}
     >
-      <button 
+      <button
         id="mobile-sticky-cta"
         className="mobile-sticky-cta-button"
-        onClick={openOfferModal}
+        onClick={() => scrollToSection('vacation-search')}
       >
         Get Cruise Offers
       </button>

@@ -102,9 +102,10 @@
 
 .form-input:focus {
   outline: none;
-  border-color: var(--ocean-blue);
+  border-color: #B23A93;
   background: var(--white);
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.08);
+  box-shadow: 0 0 0 3px rgba(178, 58, 147, 0.1);
+  caret-color: #B23A93;
 }
 
 .form-input::placeholder {

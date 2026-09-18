@@ -4,9 +4,10 @@ import { Check } from 'lucide-react'
 import './CruiseExperience.css'
 
 const CruiseExperience = () => {
-  const openOfferModal = () => {
-    if (window.openOfferModal) {
-      window.openOfferModal()
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -54,9 +55,9 @@ const CruiseExperience = () => {
               ))}
             </ul>
 
-            <button 
+            <button
               className="btn btn-primary experience-cta"
-              onClick={openOfferModal}
+              onClick={() => scrollToSection('vacation-search')}
             >
               Plan My Cruise
             </button>
