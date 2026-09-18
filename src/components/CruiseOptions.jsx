@@ -17,7 +17,7 @@ const CruiseOptions = () => {
       route: 'Mumbai → Goa',
       description: 'Perfect for a quick refreshing break from routine.',
       badge: 'WEEKEND GETAWAY',
-      image: 'public/image copy 7.png',
+      image: '/image copy 7.png',
       cta: 'Explore Cruise'
     },
     {
